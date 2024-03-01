@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import PokemonCard from './PokemonCard';
 import axios from 'axios'
+import pokeball from "../../Types/01 Poke Ball.png"
+import glass from "../../Types/magnifying-glass (1).png"
+import pika from "../../Types/pika.png"
 
 const Header = () => {
     
@@ -32,8 +35,8 @@ const Header = () => {
             }
         };
     
-        fetchData(); // Вызываем функцию с асинхронным запросом
-    }, []); // Передаем пустой массив зависимостей, чтобы эффект выполнился только при монтировании
+        fetchData(); 
+    }, []);
     
 
 
@@ -70,14 +73,14 @@ const Header = () => {
             <div className="Header">
                 <div className="search-container">
                     <span>Who are you looking for?</span>
-                    <img src="../../Types/01 Poke Ball.png" className="pokeball" />
+                    <img src={pokeball} className="pokeball" />
                     <input
                         placeholder="E.g. Pikachu"
                         type="text"
                         value={searchValue}
                         onChange={handleSearchClick}
                          />
-                    <img src="../../Types/magnifying-glass (1).png" className="magnifying-glass" />
+                    <img src={glass} className="magnifying-glass" />
                     <button type="button" className="go-button" onClick={handleSearchClick}>       
                         Go
                     </button>
@@ -88,7 +91,7 @@ const Header = () => {
                             <div className='NoResult'>
                                 <h2>Oops! Try again.</h2>
                                 <span>The Pokemon you're looking for is a unicorn. It doesn't exist in this list</span>
-                                <img src="../../Types/pika.png" />
+                                <img src={pika} />
                             </div>
                         ) : (
                             filter.length > 0 && filter.length < 1300 ? (
