@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/OrisSem2/static/css/main.4bff2548.css",
+    "main.js": "/OrisSem2/static/js/main.877ab825.js",
+    "static/media/Poison@2x.png": "/OrisSem2/static/media/Poison@2x.af7ea9bb7f9173de6593.png",
+    "static/media/Ghost@2x.png": "/OrisSem2/static/media/Ghost@2x.e4c9450702d7baf07f23.png",
+    "static/media/Dark@2x.png": "/OrisSem2/static/media/Dark@2x.2adab1193b3939e2babf.png",
+    "static/media/Psychic@2x.png": "/OrisSem2/static/media/Psychic@2x.64a6e051f18409139c45.png",
+    "static/media/Rock@2x.png": "/OrisSem2/static/media/Rock@2x.b9c8ca3d0a900ef9d23f.png",
+    "static/media/Normal@2x.png": "/OrisSem2/static/media/Normal@2x.6984577062ba0c5d386a.png",
+    "static/media/Bug@2x.png": "/OrisSem2/static/media/Bug@2x.baeb5551918981eb08ca.png",
+    "static/media/Steel@2x.png": "/OrisSem2/static/media/Steel@2x.2242e35e121bfa6873a7.png",
+    "static/media/Dragon@2x.png": "/OrisSem2/static/media/Dragon@2x.b9f3323c34104009d870.png",
+    "static/media/Flying@2x.png": "/OrisSem2/static/media/Flying@2x.2489c8d509eddc338b4a.png",
+    "index.html": "/OrisSem2/index.html",
+    "main.4bff2548.css.map": "/OrisSem2/static/css/main.4bff2548.css.map",
+    "main.877ab825.js.map": "/OrisSem2/static/js/main.877ab825.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bff2548.css",
+    "static/js/main.877ab825.js"
+  ]
+}
