@@ -70,14 +70,14 @@ const Header = () => {
             <div className="Header">
                 <div className="search-container">
                     <span>Who are you looking for?</span>
-                    <img src="01 Poke Ball.png" className="pokeball" />
+                    <img src="../../Types/01 Poke Ball.png" className="pokeball" />
                     <input
                         placeholder="E.g. Pikachu"
                         type="text"
                         value={searchValue}
                         onChange={handleSearchClick}
                          />
-                    <img src="magnifying-glass (1).png" className="magnifying-glass" />
+                    <img src="../../Types/magnifying-glass (1).png" className="magnifying-glass" />
                     <button type="button" className="go-button" onClick={handleSearchClick}>       
                         Go
                     </button>
@@ -88,7 +88,7 @@ const Header = () => {
                             <div className='NoResult'>
                                 <h2>Oops! Try again.</h2>
                                 <span>The Pokemon you're looking for is a unicorn. It doesn't exist in this list</span>
-                                <img src="pika.png" />
+                                <img src="../../Types/pika.png" />
                             </div>
                         ) : (
                             filter.length > 0 && filter.length < 1300 ? (

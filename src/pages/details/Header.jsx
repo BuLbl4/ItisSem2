@@ -5,9 +5,9 @@ const Header = () => {
 return (  
     <>
     <div className="head">
-        <img src="../01 Poke Ball.png" className="pokeball"></img>
+        <img src="../../Types/01 Poke Ball.png" className="pokeball"></img>
         <Link to={`/OrisSem2`}>
-            <img src="../arrow-left.svg" className='arrow'></img>
+            <img src="../../Types/arrow-left.svg" className='arrow'></img>
         </Link>
 
     </div>
