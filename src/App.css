@@ -2,8 +2,18 @@
   display: flex;
   flex-wrap: wrap;
 }
-body {
-  overflow-x: hidden;
+html
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .PokemonCard {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -114,6 +124,8 @@ body {
 }
 .search-container img{
   margin-left: -306px;
+  overflow: hidden;
+
 }
 }
 @media (min-width: 1600px) and (max-width: 1920px){
@@ -179,6 +191,8 @@ body {
 }
 .search-container img{
   margin-left: -310px;
+  overflow: hidden;
+
 }
 
 }
@@ -244,6 +258,8 @@ body {
   }
   .search-container img{
     margin-left: -246px;
+    overflow: hidden;
+
   }
   
 }
@@ -255,6 +271,8 @@ body {
   }
   .search-container img{
     margin-left: -246px;
+    overflow: hidden;
+
   }
   
   
@@ -372,6 +390,8 @@ body {
   }
   .search-container img{
     margin-left: -246px;
+    overflow: hidden;
+
   }
 }
 
