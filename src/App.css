@@ -447,8 +447,7 @@ body
       overflow-x: hidden;
   }
 }
-
-@media (min-width: 480px) and (max-width: 767px){
+@media (min-width: 560px) and (max-width: 767px){
   .Card {
     display: flex;
     align-items: center;
@@ -464,7 +463,7 @@ body
     width: 40%; 
     height: 200px;
     font-size: 16px;
-    margin-left: 35px;
+    margin-left: 3px;
   }
   .PokemonCard span {
     color:gray;
@@ -488,6 +487,75 @@ body
     width: 120px;
     height: 120px;
     border-radius: 20%; 
+}
+.pokeball{
+  min-width: 100px;
+  max-width: 120px;
+}
+
+  .NoResult {
+    margin-top: 80px;
+  }
+  html
+  {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  body
+  {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
+ 
+}
+
+@media (min-width: 480px) and (max-width: 560px){
+  .Card {
+    display: flex;
+    align-items: center;
+  }
+  .types{
+    width: 160px;
+    height: 20px;
+    margin-top: 12px;
+    gap:50px;
+  }
+  .PokemonCard {
+    margin-top: 20px;
+    height: 150px;
+    font-size: 16px;
+    margin-left: 56px;
+  }
+  .PokemonCard span {
+    color:gray;
+    position: absolute;
+    top: 5px;
+    right: 10px; 
+    font-weight:300;
+  }
+  .PokemonCard h6 {
+    color:blue;
+    position: absolute;
+    top: 8px; 
+    left: 8px; 
+    margin: 0;
+    font-weight:500;
+    font-size: 16px;
+  }
+  
+  .PokemonCard img {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 20%; 
+}
+.pokeball{
+  min-width: 100px;
+  max-width: 120px;
 }
 
   .NoResult {
@@ -527,7 +595,7 @@ body
     min-width: 140px;
     max-width: 180px;
     font-size: 16px;
-    margin-left: 15px;
+    margin-left: 38px;
   }
   .PokemonCard span {
     color:gray;
@@ -601,7 +669,7 @@ body
   .types{
     min-width: 70px;
     max-width: 120px;
-    height: 20px;
+    height: 30px;
     margin-top: 12px;
   }
   .pokeball {
@@ -619,7 +687,6 @@ body
     max-width: 150px;
     font-size: 16px;
     margin-left: 10px;
-    margin-right: 5px;
   }
   .PokemonCard span {
     color:gray;
