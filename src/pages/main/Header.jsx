@@ -13,6 +13,7 @@ const Header = () => {
     const [allPokemon, setAllPokemon] = useState([])
     const [searchValue, setSearchValue] = useState('');
     const [filter, setFilter] = useState(allPokemon);
+    const [filterExecuted, setFilterExecuted] = useState(false);
 
     useEffect(() => { 
         if(fetching){
@@ -55,21 +56,34 @@ const Header = () => {
         }
     }
 
-    const handleSearchClick = (e) => {
+    useEffect(() => {
+        if (searchValue === '') {
+            setFilter([]);
+        }
+    }, [searchValue]);
+    
+    const handleSearchChange = (e) => {
         setSearchValue(e.target.value);
-        const lowercaseSearchValue = e.target.value.toLowerCase();
+        setFilterExecuted(false)
+    };
+    
+
+      const handleSearchClick = () => {
         const filterBratikov = allPokemon.filter((pokemon) => pokemon.name
-        .includes(lowercaseSearchValue))
+        .includes(searchValue.toLowerCase()))
+        setFilterExecuted(true);
         setFilter(filterBratikov);
     };
 
-    if(!pokemonData){
+    if(pokemonData.length === 0){
         return (
             <div></div>
         )
     } else {
         return (  
+
             <>
+
             <div className="Header">
                 <div className="search-container">
                     <span>Who are you looking for?</span>
@@ -78,7 +92,7 @@ const Header = () => {
                         placeholder="E.g. Pikachu"
                         type="text"
                         value={searchValue}
-                        onChange={handleSearchClick}
+                        onChange={handleSearchChange}
                          />
                     <img src={glass} className="magnifying-glass" />
                     <button type="button" className="go-button" onClick={handleSearchClick}>       
@@ -87,23 +101,28 @@ const Header = () => {
                 </div>
         
                 </div><div className='Card'>
-                    {filter.length === 0 && searchValue.length > 0 ? (
-                            <div className='NoResult'>
-                                <h2>Oops! Try again.</h2>
-                                <span>The Pokemon you're looking for is a unicorn. It doesn't exist in this list</span>
-                                <img src={pika} />
-                            </div>
-                        ) : (
-                            filter.length > 0 && filter.length < 1300 ? (
-                                filter.map((pokemon, index) => (
-                                    <PokemonCard key={index} pokemon={pokemon.url} />
-                                ))
-                            ) : (
-                                pokemonData.map((pokemon, index) => (
-                                    <PokemonCard key={index} pokemon={pokemon.url} />
-                                ))
+                    {filterExecuted && filter.length === 0 && searchValue.length > 0 ? (
+                        <div className='NoResult'>
+                            <h2>Oops! Try again.</h2>
+                            <span>The Pokemon you're looking for is a unicorn. It doesn't exist in this list</span>
+                            <img src={pika} />
+                            {console.log(filterExecuted, filter.length, searchValue)}
+
+                        </div>
+
+                        
+                    ) : (
+                        filter.length > 0 ? (
+                            filter.map((pokemon, index) => (
+                                <PokemonCard key={index} pokemon={pokemon.url} />
                             )
-                        )}  
+                            )
+                        ) : (
+                            pokemonData.map((pokemon, index) => (
+                                <PokemonCard key={index} pokemon={pokemon.url} />
+                            ))
+                        )
+                    )}
                 </div>
             </>
         )
