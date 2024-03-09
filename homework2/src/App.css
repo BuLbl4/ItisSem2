@@ -6,7 +6,7 @@
 .PokemonCard {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  min-width: 180px;
+  min-width: 120px;
   min-height: 250px;
   border-radius: 3px;
   display: flex;
@@ -195,6 +195,10 @@ body
   overflow: hidden;
 
 }
+.pokeball{
+  margin-right: 100px;
+  max-width: 350px;
+}
 html
 {
     width: 100%;
@@ -274,6 +278,10 @@ body
     margin-left: -246px;
     overflow: hidden;
 
+  }
+  .pokeball{
+    margin-right: 100px;
+    max-width: 300px;
   }
   html
   {
@@ -363,7 +371,10 @@ html
     max-width: 100%;
     overflow-x: hidden;
 }
-
+.pokeball{
+  margin-right: 100px;
+  max-width: 270px;
+}
 body
 {
     width: 100%;
@@ -387,6 +398,7 @@ body
   .PokemonCard {
     margin-top: 20px;
     width: 20%;
+
   }
   .PokemonCard span {
     color:gray;
@@ -420,6 +432,10 @@ body
   align-items: center; 
   justify-content: center; 
   position: absolute;
+}
+.pokeball{
+  margin-right: 100px;
+  max-width: 240px;
 }
   .NoResult {
     margin-top: 100px;
@@ -456,14 +472,15 @@ body
     width: 160px;
     height: 20px;
     margin-top: 12px;
-    gap:50px;
+    gap:20px;
   }
   .PokemonCard {
     margin-top: 20px;
-    width: 40%; 
+    min-width: 91%;
+    max-width:100%; 
     height: 200px;
     font-size: 16px;
-    margin-left: 3px;
+    margin-left: 20px;
   }
   .PokemonCard span {
     color:gray;
@@ -489,8 +506,10 @@ body
     border-radius: 20%; 
 }
 .pokeball{
+  margin-right: 100px;
+  margin-top: 20px;
   min-width: 100px;
-  max-width: 230px;
+  max-width: 200px;
 }
 
   .NoResult {
@@ -519,16 +538,18 @@ body
     align-items: center;
   }
   .types{
-    width: 160px;
+    width: 110px;
     height: 20px;
     margin-top: 12px;
-    gap:50px;
+    gap:20px;
   }
   .PokemonCard {
     margin-top: 20px;
-    height: 150px;
+    min-width: 95%;
+    max-width:110%; 
+    height: 200px;
     font-size: 16px;
-    margin-left: 56px;
+    margin-left: 30px;
   }
   .PokemonCard span {
     color:gray;
@@ -554,9 +575,10 @@ body
     border-radius: 20%; 
 }
 .pokeball {
-  
+  margin-top: 30px;
+  margin-right: 100px;
   min-width: 100px;
-  max-width: 230px;
+  max-width: 180px;
 }
 
   .NoResult {
@@ -585,11 +607,11 @@ body
     align-items: center;
   }
   .types{
-    min-width: 120px;
+    min-width: 130px;
     max-width: 130px;
     min-height: 20px;
     margin-top: 20px;
-    gap:20px;
+    gap:8px;
   }
   .PokemonCard {
     margin-top: 20px;
@@ -623,9 +645,9 @@ body
 }
 .pokeball {
   margin-top: 40px;
-  margin-right: 40px;
+  margin-right: 100px;
   min-width: 50px;
-  max-width: 170px;
+  max-width: 140px;
 }
 
   .NoResult {
@@ -671,10 +693,10 @@ body
     margin-top: 12px;
   }
   .pokeball {
-    margin-top: 40px;
-    margin-right: 44px;
+    margin-top: 60px;
+    margin-right: 100px;
     min-width: 50px;
-    max-width: 150px;
+    max-width: 100px;
   }
   .PokemonCard {
     margin-top: 20px;
