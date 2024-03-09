@@ -554,13 +554,9 @@ body
     border-radius: 20%; 
 }
 .pokeball {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 250px; 
-  min-width: 50px;
-  max-width: 100px;
-  opacity: 0.7;
+  
+  min-width: 100px;
+  max-width: 230px;
 }
 
   .NoResult {
