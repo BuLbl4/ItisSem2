@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OrisSem2/static/css/main.48ae0249.css",
-    "main.js": "/OrisSem2/static/js/main.dff58ffd.js",
+    "main.js": "/OrisSem2/static/js/main.9101ae50.js",
     "static/media/01 Poke Ball.png": "/OrisSem2/static/media/01 Poke Ball.4dc4123130fdcbbcdbe8.png",
     "static/media/pika.png": "/OrisSem2/static/media/pika.f94c0a32974a383813e9.png",
     "static/media/Poison@2x.png": "/OrisSem2/static/media/Poison@2x.af7ea9bb7f9173de6593.png",
@@ -17,10 +17,10 @@
     "index.html": "/OrisSem2/index.html",
     "static/media/arrow-left.svg": "/OrisSem2/static/media/arrow-left.c73c159158c7a5b96b4d8070676b14c2.svg",
     "main.48ae0249.css.map": "/OrisSem2/static/css/main.48ae0249.css.map",
-    "main.dff58ffd.js.map": "/OrisSem2/static/js/main.dff58ffd.js.map"
+    "main.9101ae50.js.map": "/OrisSem2/static/js/main.9101ae50.js.map"
   },
   "entrypoints": [
     "static/css/main.48ae0249.css",
-    "static/js/main.dff58ffd.js"
+    "static/js/main.9101ae50.js"
   ]
 }
