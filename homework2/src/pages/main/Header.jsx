@@ -106,11 +106,7 @@ const Header = () => {
                             <h2>Oops! Try again.</h2>
                             <span>The Pokemon you're looking for is a unicorn. It doesn't exist in this list</span>
                             <img src={pika} />
-                            {console.log(filterExecuted, filter.length, searchValue)}
-
-                        </div>
-
-                        
+                        </div>    
                     ) : (
                         filter.length > 0 ? (
                             filter.map((pokemon, index) => (
