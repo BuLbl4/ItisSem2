@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yC/qa2Ir1xKHw8fgOImecMEL/oe7E8S8YtkMOslESaQMnOLKfVaZ8k6Wdu7KAQ7rkUaFRMVdCpVaCFbm6vehoQ==",
+  "dgSpecHash": "cm3KtYJqmzPTcbbr7kYq50Iq3w+ywIjC66QUPy4t55fDWS6SApuq0YdVzvYgGNdz+5oMg1fEM2Y7WKE/yWjv7w==",
   "success": true,
   "projectFilePath": "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonAPI.IntegrationTest\\PokemonAPI.IntegrationTest.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,10 @@
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.diasymreader\\2.0.0\\microsoft.diasymreader.2.0.0.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\8.0.1\\microsoft.dotnet.scaffolding.shared.8.0.1.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0\\microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
@@ -127,6 +131,8 @@
     "C:\\Users\\Булат\\.nuget\\packages\\mstest.testadapter\\3.0.4\\mstest.testadapter.3.0.4.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\mstest.testframework\\3.0.4\\mstest.testframework.3.0.4.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\Булат\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Булат\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

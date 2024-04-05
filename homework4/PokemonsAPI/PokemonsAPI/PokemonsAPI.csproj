@@ -13,6 +13,7 @@
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.2" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
         <PackageReference Include="NUnit" Version="4.1.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
@@ -26,6 +27,10 @@
 
     <ItemGroup>
       <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PokemonAPI.DataAccess\PokemonAPI.DataAccess.csproj" />
     </ItemGroup>
 	<PropertyGroup>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
