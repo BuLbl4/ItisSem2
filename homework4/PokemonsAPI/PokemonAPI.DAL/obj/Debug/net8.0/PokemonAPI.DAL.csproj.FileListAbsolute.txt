@@ -1,0 +1,16 @@
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\bin\Debug\net8.0\PokemonAPI.DAL.deps.json
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\bin\Debug\net8.0\PokemonAPI.DAL.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\bin\Debug\net8.0\PokemonAPI.DAL.pdb
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\bin\Debug\net8.0\PokemonAPI.Core.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\bin\Debug\net8.0\PokemonAPI.Core.pdb
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.csproj.AssemblyReference.cache
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.AssemblyInfoInputs.cache
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.AssemblyInfo.cs
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.csproj.CoreCompileInputs.cache
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.sourcelink.json
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.csproj.CopyComplete
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\refint\PokemonAPI.DAL.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\PokemonAPI.DAL.pdb
+C:\OrisSem2\homework4\PokemonsAPI\PokemonAPI.DAL\obj\Debug\net8.0\ref\PokemonAPI.DAL.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cm3KtYJqmzPTcbbr7kYq50Iq3w+ywIjC66QUPy4t55fDWS6SApuq0YdVzvYgGNdz+5oMg1fEM2Y7WKE/yWjv7w==",
+  "dgSpecHash": "HU7zAY2lBCmhoe0hOEixMfhOvpwPVfiOxJJEhHsRSnA3M1nQqB/8FirlZ8L+EB7QdRsFBr1x8meXGc3s1cRyDA==",
   "success": true,
   "projectFilePath": "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonAPI.IntegrationTest\\PokemonAPI.IntegrationTest.csproj",
   "expectedPackageFiles": [

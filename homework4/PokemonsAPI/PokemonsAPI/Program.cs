@@ -1,6 +1,8 @@
+
 using Microsoft.EntityFrameworkCore;
-using PokemonAPI.DataAccess;
-using PokemonsAPI.Services;
+using PokemonAPI.Core;
+    using PokemonAPI.DAL;
+using PokemonAPI.DAL.EfCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -10,12 +12,7 @@ builder.Services.AddSwaggerGen(options =>
     var xmlPath = string.Format(@"{0}PokemonsAPI.xml", AppDomain.CurrentDomain.BaseDirectory);
     options.IncludeXmlComments(xmlPath);
 });
-var connectionString = builder.Configuration["DefaultConnection"];
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.LogTo(Console.WriteLine);
-    options.UseNpgsql(connectionString);
-});
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration["ConnectionString:DefaultConnection"]));
 
 builder.Services.AddCors(options =>
 {
@@ -24,16 +21,17 @@ builder.Services.AddCors(options =>
             "AllowAnyOrigin",
             opt => opt.AllowAnyOrigin());
 });
-
+builder.Services.AddCore();
 builder.Services.AddHttpClient();
-builder.Services.AddScoped<IPokeService, PokeService>();
 builder.Services.AddLogging();
+builder.Services.AddPostgreSqlCore();
+
+
 
 
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

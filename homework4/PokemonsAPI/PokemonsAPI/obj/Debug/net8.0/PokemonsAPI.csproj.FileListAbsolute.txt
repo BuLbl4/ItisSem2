@@ -1072,8 +1072,6 @@ C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\runtimes\win\lib\
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.DataAccess.dll
-C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.DataAccess.pdb
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\PokemonsAPI.csproj.AssemblyReference.cache
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\MvcTestingAppManifest.json
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\PokemonsAPI.GeneratedMSBuildEditorConfig.editorconfig
@@ -1098,3 +1096,8 @@ C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\PokemonsAPI.xml
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\PokemonsAPI.pdb
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\PokemonsAPI.genruntimeconfig.cache
 C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\obj\Debug\net8.0\ref\PokemonsAPI.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.Core.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.Core.pdb
+C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.DAL.dll
+C:\OrisSem2\homework4\PokemonsAPI\PokemonsAPI\bin\Debug\net8.0\PokemonAPI.DAL.pdb

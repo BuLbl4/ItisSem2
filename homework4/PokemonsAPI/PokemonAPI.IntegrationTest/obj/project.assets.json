@@ -3357,18 +3357,33 @@
           }
         }
       },
-      "PokemonAPI.DataAccess/1.0.0": {
+      "PokemonAPI.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/PokemonAPI.DataAccess.dll": {}
+          "bin/placeholder/PokemonAPI.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PokemonAPI.DataAccess.dll": {}
+          "bin/placeholder/PokemonAPI.Core.dll": {}
+        }
+      },
+      "PokemonAPI.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
+          "PokemonAPI.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PokemonAPI.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PokemonAPI.DAL.dll": {}
         }
       },
       "PokemonsAPI/1.0.0": {
@@ -3378,11 +3393,14 @@
           "Microsoft.AspNetCore.Authentication.Negotiate": "8.0.0",
           "Microsoft.AspNetCore.Mvc.Testing": "8.0.2",
           "Microsoft.AspNetCore.OpenApi": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.1",
           "NUnit": "4.1.0",
           "NUnit3TestAdapter": "4.5.0",
+          "Npgsql": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
-          "PokemonAPI.DataAccess": "1.0.0",
+          "PokemonAPI.Core": "1.0.0",
+          "PokemonAPI.DAL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "compile": {
@@ -9337,10 +9355,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "PokemonAPI.DataAccess/1.0.0": {
+    "PokemonAPI.Core/1.0.0": {
       "type": "project",
-      "path": "../PokemonAPI.DataAccess/PokemonAPI.DataAccess.csproj",
-      "msbuildProject": "../PokemonAPI.DataAccess/PokemonAPI.DataAccess.csproj"
+      "path": "../PokemonAPI.Core/PokemonAPI.Core.csproj",
+      "msbuildProject": "../PokemonAPI.Core/PokemonAPI.Core.csproj"
+    },
+    "PokemonAPI.DAL/1.0.0": {
+      "type": "project",
+      "path": "../PokemonAPI.DAL/PokemonAPI.DAL.csproj",
+      "msbuildProject": "../PokemonAPI.DAL/PokemonAPI.DAL.csproj"
     },
     "PokemonsAPI/1.0.0": {
       "type": "project",
@@ -9353,6 +9376,7 @@
       "MSTest.TestAdapter >= 3.0.4",
       "MSTest.TestFramework >= 3.0.4",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
+      "PokemonAPI.Core >= 1.0.0",
       "PokemonsAPI >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
@@ -9390,6 +9414,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonAPI.Core\\PokemonAPI.Core.csproj": {
+              "projectPath": "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonAPI.Core\\PokemonAPI.Core.csproj"
+            },
             "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonsAPI\\PokemonsAPI.csproj": {
               "projectPath": "C:\\OrisSem2\\homework4\\PokemonsAPI\\PokemonsAPI\\PokemonsAPI.csproj"
             }

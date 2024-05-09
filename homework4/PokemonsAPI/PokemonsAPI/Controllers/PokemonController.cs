@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using PokemonsAPI.Models;
-using PokemonsAPI.Services;
+using PokemonAPI.Core.Entity;
+using PokemonAPI.Core.Inrerfaces;
+using PokemonAPI.Core.Models;
+
 
 namespace PokemonsAPI.Controllers
 {
@@ -24,7 +26,7 @@ namespace PokemonsAPI.Controllers
         /// <returns>Покемона по Id</returns>
         
         [HttpGet("ById/{id}")]
-        public Task<Pokemon> GetPokemonById([FromRoute]int id)
+        public Task<Pokemon> GetPokemonById([FromRoute]Guid id)
         {
             return _pokeService.GetById(id);
         }
@@ -36,7 +38,7 @@ namespace PokemonsAPI.Controllers
         /// <param name="name">Имя покемона</param>
         /// <returns>Покемон по имени</returns>
         [HttpGet("ByName/{name}")]
-        public Task<Pokemon> GetPokemonByName([FromRoute]string name)
+        public Task<PokemonFullInfo> GetPokemonByName([FromRoute]string name)
         {
             return _pokeService.GetByName(name);
         }
@@ -48,23 +50,18 @@ namespace PokemonsAPI.Controllers
         /// <param name="name">часть или полное имя покемона</param>
         /// <returns>Отфильтрованный список покемонов</returns>
         [HttpGet("Filter/{name}")]
-        public async Task<List<PokemonResult>> GetByFilter([FromRoute] string name)
+        public async Task<List<Pokemon>> GetByFilter([FromRoute] string name)
         {
-           List<PokemonResult> filteredPokemons = await _pokeService.Filter(name);
+           List<Pokemon> filteredPokemons = await _pokeService.Filter(name);
            return filteredPokemons;
         }
-        
-        /// <summary>
-        /// Получить тип по названию 
-        /// </summary>
-        /// <param name="typeName">typeName</param>
-        /// <returns>Тип покемона</returns>
-        
-        [HttpGet("ByType/{typeName}")]
-        public Task<Move> GetPokemonType([FromRoute]string typeName)
+
+        [HttpGet("[action]")]
+        public async Task<List<Types>> GetType()
         {
-            return _pokeService.GetType(typeName);
+            return await _pokeService.GetTypes();
         }
+        
         
         /// <summary>
         /// Получить несколько покемонов 
@@ -72,21 +69,22 @@ namespace PokemonsAPI.Controllers
         /// <param name="offset">кол-во покемонов</param>
         /// <returns>Список Покемонов</returns>
         
-        [HttpGet("Pagination/{offset}")]
-        public Task<PokemonResponse> Pagination([FromRoute]int offset)
+        [HttpGet("Pagination")]
+        public Task<List<PokemonWithTypesResponse>> Pagination([FromQuery]int offset, int limit)
         {
-            return _pokeService.ForPaginashion(offset);
+            return _pokeService.ForPaginashion(offset, limit);
         }
         
         /// <summary>
         /// Получить всех покемонов
         /// </summary>
         /// <returns>массив покемонов</returns>
-        [HttpGet]
-        [Route("poke")]
-        public Task<PokemonResponse> GetAllPokemons()
+        [HttpGet("[action]")]
+        public Task<List<Pokemon>> GetAllPokemons()
         {
             return _pokeService.GetAllPokemons();
         }
+        
+        
     }
 }

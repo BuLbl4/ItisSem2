@@ -1,6 +1,6 @@
 using System.Net;
 using System.Net.Http.Json;
-using PokemonsAPI.Models;
+using PokemonAPI.Core.Entity;
 
 namespace PokemonAPI.IntegrationTest;
 [TestClass]
@@ -28,7 +28,7 @@ public class GetTypeTestClass
         var typeName = "tackle";
 
         // Act
-        var pokemonType = await HttpClient.GetFromJsonAsync<Move>($"/api/Pokemon/ByType/{typeName}");
+        var pokemonType = await HttpClient.GetFromJsonAsync<Moves>($"/api/Pokemon/ByType/{typeName}");
 
         // Assert
         Assert.IsNotNull(pokemonType);
@@ -55,9 +55,9 @@ public class GetTypeTestClass
         string type = "mega-punch";
         
         // Act
-        var pokemonType = await HttpClient.GetFromJsonAsync<Move>($"/api/Pokemon/ByType/{type}");
+        var pokemonType = await HttpClient.GetFromJsonAsync<Moves>($"/api/Pokemon/ByType/{type}");
 
-        var apiPokemon = await HttpClient.GetFromJsonAsync<Move>($"https://pokeapi.co/api/v2/move/{type}");
+        var apiPokemon = await HttpClient.GetFromJsonAsync<Moves>($"https://pokeapi.co/api/v2/move/{type}");
         // Assert
         Assert.AreEqual(pokemonType!.Name, apiPokemon!.Name);
     }

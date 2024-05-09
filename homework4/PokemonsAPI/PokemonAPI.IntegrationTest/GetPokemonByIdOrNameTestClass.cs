@@ -1,6 +1,6 @@
 using System.Net;
 using System.Net.Http.Json;
-using PokemonsAPI.Models;
+using PokemonAPI.Core.Entity;
 
 namespace PokemonAPI.IntegrationTest;
 
@@ -79,8 +79,8 @@ public class GetPokemonByIdOrNameTestClass
         var myPokemonById = await HttpClient.GetFromJsonAsync<Pokemon>($"/api/Pokemon/ById/{id}");
         
         // Assert
-        Assert.AreEqual((myPokemonByName!.Weight , myPokemonByName.Height!),
-            (myPokemonById!.Weight!, myPokemonById.Height!));
+        Assert.AreEqual((myPokemonByName!.Breeding.Weight , myPokemonByName.Breeding.Height!),
+            (myPokemonById!.Breeding.Weight!, myPokemonById.Breeding.Height!));
     }
     [TestMethod]
     public async Task GetPokemonById_InvalidId_ReturnsNoContent()
