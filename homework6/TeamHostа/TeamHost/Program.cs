@@ -2,7 +2,6 @@ using System.Globalization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
-using TeamHost.Application.Extensions;
 using TeamHost.Domain.Entities;
 using TeamHost.Persistence.Contexts;
 using TeamHost.Persistence.Extensions;
@@ -29,7 +28,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt =>
     .AddDefaultTokenProviders()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddApplicationLayer();
 
 builder.Services.AddPersistenceLayer(builder.Configuration);
 

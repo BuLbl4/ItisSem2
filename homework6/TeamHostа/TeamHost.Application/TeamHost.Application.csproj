@@ -8,10 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Mappings\" />
     <Folder Include="DTOs\Email\" />
-    <Folder Include="Features\Games\Commands\" />
-    <Folder Include="Features\Games\Handlers\ProfileHandler\" />
-    <Folder Include="Features\Games\Queries\ProfileQuery\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Features\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

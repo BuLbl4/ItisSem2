@@ -1,7 +1,4 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using TeamHost.Application.Features.Games.DTOs;
-using TeamHost.Application.Features.Games.Queries.LoginQuery;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace TeamHost.Web.Areas.Auth.Controllers;
 
@@ -10,12 +7,7 @@ namespace TeamHost.Web.Areas.Auth.Controllers;
 public class LoginController : Controller
 {
 
-    private readonly IMediator _mediator;
-
-    public LoginController(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
+   
     public IActionResult Index()
     {
         Console.WriteLine("Логинимся");
@@ -24,13 +16,8 @@ public class LoginController : Controller
     
 
     [HttpPost]
-    public async Task<IActionResult> Login([FromForm] LoginDtoRequest loginDtoRequest)
+    public async Task<IActionResult> Login()
     {
-        var result = await _mediator.Send(new LoginUserQuery(loginDtoRequest));
-        
-        if (!result.IsSuccessfully)
-            return BadRequest(result.Errors);
-        
         return RedirectToAction("Index", "Home", new { area = "Home" });
     }
 }

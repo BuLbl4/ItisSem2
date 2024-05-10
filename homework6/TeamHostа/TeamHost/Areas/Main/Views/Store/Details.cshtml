@@ -1,4 +1,3 @@
-@model TeamHost.Application.Features.Games.DTOs.GetByIdGameResponse
 
 @{
     ViewBag.Title = "title";
@@ -74,21 +73,7 @@
                 </li>
                 <li>
                     <div>Platforms:</div>
-                    @if (Model.Platforms.All(x => x.Equals("Apple", StringComparison.OrdinalIgnoreCase)
-                                || x.Equals("Windows", StringComparison.OrdinalIgnoreCase)) && Model.Platforms.Count != 0)
-                    {
-                        <div class="game-card__platform"><i class="ico_windows"></i><i class="ico_apple"></i></div>
-                    }
-                    else if (Model.Platforms?.Any(x => x.Equals("Apple", StringComparison.OrdinalIgnoreCase)) == true
-                             && Model.Platforms.Count != 1)
-                    {
-                        <div class="game-card__platform"><i class="ico_apple"></i></div>
-                    }
-                    else if (Model.Platforms?.Any(x => x.Equals("Windows", StringComparison.OrdinalIgnoreCase)) == true
-                             && Model.Platforms.Count != 1)
-                    {
-                        <div class="game-card__platform"><i class="ico_windows"></i></div>
-                    }
+                   
                 </li>
             </ul>
             <ul class="game-profile-card__type">
