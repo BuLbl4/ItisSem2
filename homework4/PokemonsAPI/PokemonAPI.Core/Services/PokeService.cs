@@ -84,18 +84,29 @@ public class PokeService : IPokeService
 
         return pokemonResponses;
     }
-    public async Task<List<Pokemon>> Filter(string name)
+    public async Task<List<PokemonWithTypesResponse>> Filter(string name, CancellationToken cancellationToken)
     {
-        var pokemons = await GetAllPokemons();
-        var filter = new List<Pokemon>();
+        
+        var pokemons = await _dbContext.Pokemons
+            .Include(t => t.Types)
+            .ThenInclude(pt => pt.Types)
+            .Where(x => x.Name.Contains(name))
+            .OrderBy(x => x.Order)
+            .ToListAsync(cancellationToken);
+        
+        var pokemonResponses = new List<PokemonWithTypesResponse>();
+
         foreach (var pokemon in pokemons)
         {
-            if (pokemon.Name.Contains(name))
+            var pokemonResponse = new PokemonWithTypesResponse
             {
-                filter.Add(pokemon);
-            }
+                Pokemon = pokemon,
+                Types = pokemon.Types.Select(pt => pt.Types.Name).ToList()
+            };
+
+            pokemonResponses.Add(pokemonResponse);
         }
 
-        return filter;
+        return pokemonResponses;
     }
 }

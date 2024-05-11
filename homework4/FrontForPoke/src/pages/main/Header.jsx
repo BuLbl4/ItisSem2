@@ -74,14 +74,16 @@ const Header = () => {
     const handleSearchClick = async () => {
         const lowercaseSearchValue = searchValue.toLowerCase();
         try {
-          const response = await axios.get(`http://localhost:5022/api/Pokemon/Filter/${lowercaseSearchValue}`);
-          setFilter(response.data);
-          setFilterExecuted(true);
+            console.log(lowercaseSearchValue)
+              const response = await axios.get(`http://localhost:5022/api/Pokemon/Filter/${lowercaseSearchValue}`);
+              setFilter(response.data);
+              setFilterExecuted(true);
+              console.log(response.data)
         } catch (error) {
           console.log('ERROR: ', error);
         }
       };
-
+    console.log(pokemonData)
     if(!pokemonData){
         return (
             <div></div>

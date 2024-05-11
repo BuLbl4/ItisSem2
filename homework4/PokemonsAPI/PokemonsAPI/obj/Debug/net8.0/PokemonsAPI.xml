@@ -18,7 +18,7 @@
             <param name="name">Имя покемона</param>
             <returns>Покемон по имени</returns>
         </member>
-        <member name="M:PokemonsAPI.Controllers.PokemonController.GetByFilter(System.String)">
+        <member name="M:PokemonsAPI.Controllers.PokemonController.GetByFilter(System.String,System.Threading.CancellationToken)">
             <summary>
             Фильтрация покемонов по стрингу
             </summary>

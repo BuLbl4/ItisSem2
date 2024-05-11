@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonAPI.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37d48360bb3b7ef605d345bb858554e3a11a9e4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e83b336b8a701b211d845906b84a8a5f2fa0ead4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonAPI.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonAPI.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -38,9 +38,9 @@ namespace PokemonsAPI.Controllers
         /// <param name="name">Имя покемона</param>
         /// <returns>Покемон по имени</returns>
         [HttpGet("ByName/{name}")]
-        public Task<PokemonFullInfo> GetPokemonByName([FromRoute]string name)
+        public async Task<PokemonFullInfo> GetPokemonByName([FromRoute]string name)
         {
-            return _pokeService.GetByName(name);
+            return await _pokeService.GetByName(name);
         }
         
         
@@ -50,9 +50,9 @@ namespace PokemonsAPI.Controllers
         /// <param name="name">часть или полное имя покемона</param>
         /// <returns>Отфильтрованный список покемонов</returns>
         [HttpGet("Filter/{name}")]
-        public async Task<List<Pokemon>> GetByFilter([FromRoute] string name)
+        public async Task<List<PokemonWithTypesResponse>> GetByFilter([FromRoute] string name, CancellationToken cancellationToken)
         {
-           List<Pokemon> filteredPokemons = await _pokeService.Filter(name);
+           var filteredPokemons = await _pokeService.Filter(name, cancellationToken);
            return filteredPokemons;
         }
 
@@ -70,9 +70,9 @@ namespace PokemonsAPI.Controllers
         /// <returns>Список Покемонов</returns>
         
         [HttpGet("Pagination")]
-        public Task<List<PokemonWithTypesResponse>> Pagination([FromQuery]int offset, int limit)
+        public async Task<List<PokemonWithTypesResponse>> Pagination([FromQuery]int offset, int limit)
         {
-            return _pokeService.ForPaginashion(offset, limit);
+            return await _pokeService.ForPaginashion(offset, limit);
         }
         
         /// <summary>

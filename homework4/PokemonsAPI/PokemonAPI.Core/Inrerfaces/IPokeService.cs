@@ -11,7 +11,7 @@ public interface IPokeService
 
     public Task<PokemonFullInfo> GetByName(string name);
 
-    public Task<List<Pokemon>> Filter(string name);
+    Task<List<PokemonWithTypesResponse>> Filter(string name, CancellationToken cancellationToken);
 
     public Task<List<Types>> GetTypes();
     
